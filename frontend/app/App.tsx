@@ -83,6 +83,15 @@ export function App() {
 			/>
 
 			<main className="relative z-10 mx-auto flex w-full max-w-2xl flex-1 flex-col gap-4 px-4 py-8 sm:px-6">
+				<div className="text-center">
+					<h1 className="font-sans text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+						State Management
+					</h1>
+					<p className="mx-auto mt-3 max-w-xl text-base text-muted-foreground sm:text-lg">
+						Persistent actor state — messages survive server restarts with automatic serialization.
+					</p>
+				</div>
+
 				<FormField id="username" label="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
 
 				<Card variant="elevated" className="flex flex-1 flex-col overflow-hidden border-border shadow-lg shadow-black/5 dark:shadow-black/20">
